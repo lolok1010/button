@@ -1,0 +1,104 @@
+  button{
+    position: relative;
+
+background-color: rgb(255, 0, 0);
+border: none;
+padding: 10px 70px;
+border-radius: 20px;
+
+color: white;
+
+
+transition: 0.7s;
+margin-left: 800px;
+margin-top: 200px;
+ box-shadow: 10px 10px 10px 10px yellow; 
+}
+
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(12, 29, 182);
+    transition: 0.7s;
+}
+
+
+button::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: rgb(81, 201, 25);
+    width: 198px;
+    top: 39px;
+    left: 7px;   
+    transition: 0.7s;
+    margin-left:4px;
+}
+
+
+
+button:hover::after{
+    width: 0px;
+    transition: 0.7s;
+} 
+
+
+
+
+button::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: rgb(81, 201, 25);
+    width: 198px;
+   bottom: 39px;
+    right: 7px;   
+    transition: 0.7s;
+   margin-right: 4px;
+}
+
+
+button:hover::before{
+    width: 0px;
+    transition: 0.7s;
+}
+
+ 
+
+
+
+/* button{
+    padding: 9px 60px;
+    border-radius: 15px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    position: relative;
+    transition: 0.5s;
+}
+button:hover{
+    cursor: pointer;
+    transition: 0.5s;
+}
+button::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    left: 50%;
+    height: 100%;
+    background-color: rgb(1, 0, 4);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+button:hover::after{
+    width: 100%;
+    transition: 0.5s;
+    left: 0;
+}  */
+a{
+    position: relative;
+    z-index: 999;
+    color: white;
+    text-decoration: none;
+} 
